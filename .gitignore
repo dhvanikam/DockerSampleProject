@@ -1,0 +1,11 @@
+/target/
+allure-results/
+.settings/
+logs
+test-output/
+.DS_Store
+ExtentReports/
+<<<<<<< Updated upstream
+.classpath
+=======
+>>>>>>> Stashed changes
