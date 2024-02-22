@@ -22,12 +22,5 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 
 		return super.scenarios();
 	}
-
-	@BeforeTest
-	@Parameters({ "browser" })
-	public void defineBrowser(String browser) throws Throwable {
-		ConfigReader.setBrowserType(browser);
-
-	}
 	
 }

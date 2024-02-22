@@ -26,13 +26,6 @@ pipeline {
             }
         }
 
-        stage('wait for container to start')
-        {
-            steps {
-                sh 'sleep 5'
-            }        
-            
-        }
         
         stage('Compile Stage') {
             steps {

@@ -30,7 +30,7 @@ public class Hooks {
 		Loggerload.info("Loading Config file");
 
 		ConfigReader.loadConfig();
-		String browser = ConfigReader.getBrowserType();
+		String browser = System.getProperty("browser");
 
 		// Initialize driver from driver factory
 		driverfactory = new DriverFactory();
