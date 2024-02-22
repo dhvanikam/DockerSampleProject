@@ -20,8 +20,8 @@ pipeline {
         stage('Start container') {
             steps {
                 retry(2) {
-                    sh 'docker-compose -f docker-compose-v2.yml up -d --scale chrome=2 --scale firefox=2'
-                    sh 'docker compose -f docker-compose-v2.yml ps'
+                    sh 'docker-compose -f docker-compose-v3.yml up -d --scale chrome=2 --scale firefox=2'
+                    sh 'docker compose -f docker-compose-v3.yml ps'
                 }
             }
         }
@@ -75,7 +75,7 @@ pipeline {
                             [path: 'target/firefox/allure-results']
                         ]
                     ])
-            sh 'docker compose -f docker-compose-v2.yml down --remove-orphans -v'
+            sh 'docker compose -f docker-compose-v3.yml down --remove-orphans -v'
             
         }
     }
