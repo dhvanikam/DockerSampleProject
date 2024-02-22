@@ -25,7 +25,7 @@ public class DriverFactory {
 			DesiredCapabilities capability = new DesiredCapabilities();
 			capability.setPlatform(Platform.LINUX);
 			capability.setBrowserName(browser);
-			driver = new RemoteWebDriver(new URL("http://localhost:4445/"), capability);
+			driver = new RemoteWebDriver(new URL("http://localhost:4444/"), capability);
 
 		} else if (browser.equalsIgnoreCase("chrome")) {
 			Loggerload.info("Testing on chrome");
