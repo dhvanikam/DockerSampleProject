@@ -154,7 +154,7 @@ Jenkinsfile of pipeline script in your project,
 <img width="295" alt="Screenshot_2023-06-27_at_6 02 31_PM" src="https://github.com/dhvanikam/DockerSampleProject/assets/73573915/dd70107a-0339-486f-8eb2-e32e4a8bfb70">
 
 
-Jenkinsfile should look like, 
+Jenkinsfile should look like, Note : **For Windows User use 'bat' instead of 'sh'**
 
 ```groovy
 pipeline {
