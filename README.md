@@ -138,7 +138,7 @@ if (browser.equalsIgnoreCase("firefox")) {
 
 ## Configure Jenkins** pipeline script:
 
-- Create a Jenkins [pipeline](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/) for testing project.
+- Create a Jenkins [pipeline](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/)  for testing project.
 - Here we are going to follow few steps while creating pipeline script,
     - **Stage 1:** Verify required tools are installed
     - **Stage 2:** Clean running container
