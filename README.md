@@ -104,7 +104,7 @@ Get the Browser value : **Hooks.java**
 ```java
 @Before(order = 0)
 	public static void before() throws Throwable {
-		String browser = **System.getProperty("browser");**
+		String browser = System.getProperty("browser");
 		driverfactory = new DriverFactory();
 		driver = driverfactory.initializeDrivers(browser);
 
